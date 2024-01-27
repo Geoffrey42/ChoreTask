@@ -11,6 +11,7 @@
 		BF00AE182B65C008008983E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE172B65C008008983E6 /* ContentView.swift */; };
 		BF00AE1A2B65C00A008983E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF00AE192B65C00A008983E6 /* Assets.xcassets */; };
 		BF00AE1D2B65C00A008983E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF00AE1C2B65C00A008983E6 /* Preview Assets.xcassets */; };
+		BF00AE242B65C2EE008983E6 /* ChoreTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE232B65C2EE008983E6 /* ChoreTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BF00AE172B65C008008983E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF00AE192B65C00A008983E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF00AE1C2B65C00A008983E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF00AE232B65C2EE008983E6 /* ChoreTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BF00AE152B65C008008983E6 /* ChoresRaceApp.swift */,
 				BF00AE172B65C008008983E6 /* ContentView.swift */,
+				BF00AE232B65C2EE008983E6 /* ChoreTask.swift */,
 				BF00AE192B65C00A008983E6 /* Assets.xcassets */,
 				BF00AE1B2B65C00A008983E6 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF00AE242B65C2EE008983E6 /* ChoreTask.swift in Sources */,
 				BF00AE182B65C008008983E6 /* ContentView.swift in Sources */,
 				BF00AE162B65C008008983E6 /* ChoresRaceApp.swift in Sources */,
 			);

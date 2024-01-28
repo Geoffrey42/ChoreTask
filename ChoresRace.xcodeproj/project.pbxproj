@@ -11,7 +11,11 @@
 		BF00AE182B65C008008983E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE172B65C008008983E6 /* ContentView.swift */; };
 		BF00AE1A2B65C00A008983E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF00AE192B65C00A008983E6 /* Assets.xcassets */; };
 		BF00AE1D2B65C00A008983E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF00AE1C2B65C00A008983E6 /* Preview Assets.xcassets */; };
-		BF00AE242B65C2EE008983E6 /* ChoreTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE232B65C2EE008983E6 /* ChoreTask.swift */; };
+		BF00AE242B65C2EE008983E6 /* ChoreTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE232B65C2EE008983E6 /* ChoreTaskView.swift */; };
+		BF00AE262B65CFA6008983E6 /* my_chores.json in Resources */ = {isa = PBXBuildFile; fileRef = BF00AE252B65CFA6008983E6 /* my_chores.json */; };
+		BF00AE2A2B65D0DF008983E6 /* ChoreTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE292B65D0DF008983E6 /* ChoreTaskModel.swift */; };
+		BF00AE2E2B65D363008983E6 /* ChoreTaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE2D2B65D363008983E6 /* ChoreTaskList.swift */; };
+		BF00AE302B65EC55008983E6 /* ChoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00AE2F2B65EC55008983E6 /* ChoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,11 @@
 		BF00AE172B65C008008983E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF00AE192B65C00A008983E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF00AE1C2B65C00A008983E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BF00AE232B65C2EE008983E6 /* ChoreTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTask.swift; sourceTree = "<group>"; };
+		BF00AE232B65C2EE008983E6 /* ChoreTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTaskView.swift; sourceTree = "<group>"; };
+		BF00AE252B65CFA6008983E6 /* my_chores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = my_chores.json; sourceTree = "<group>"; };
+		BF00AE292B65D0DF008983E6 /* ChoreTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTaskModel.swift; sourceTree = "<group>"; };
+		BF00AE2D2B65D363008983E6 /* ChoreTaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTaskList.swift; sourceTree = "<group>"; };
+		BF00AE2F2B65EC55008983E6 /* ChoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				BF00AE152B65C008008983E6 /* ChoresRaceApp.swift */,
-				BF00AE172B65C008008983E6 /* ContentView.swift */,
-				BF00AE232B65C2EE008983E6 /* ChoreTask.swift */,
+				BF00AE272B65D032008983E6 /* Views */,
+				BF00AE2B2B65D0EE008983E6 /* Models */,
+				BF00AE2C2B65D2E8008983E6 /* ViewModels */,
+				BF00AE282B65D063008983E6 /* Resources */,
 				BF00AE192B65C00A008983E6 /* Assets.xcassets */,
 				BF00AE1B2B65C00A008983E6 /* Preview Content */,
 			);
@@ -68,6 +78,40 @@
 				BF00AE1C2B65C00A008983E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF00AE272B65D032008983E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF00AE172B65C008008983E6 /* ContentView.swift */,
+				BF00AE232B65C2EE008983E6 /* ChoreTaskView.swift */,
+				BF00AE2D2B65D363008983E6 /* ChoreTaskList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF00AE282B65D063008983E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF00AE252B65CFA6008983E6 /* my_chores.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF00AE2B2B65D0EE008983E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF00AE292B65D0DF008983E6 /* ChoreTaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF00AE2C2B65D2E8008983E6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BF00AE2F2B65EC55008983E6 /* ChoreViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF00AE262B65CFA6008983E6 /* my_chores.json in Resources */,
 				BF00AE1D2B65C00A008983E6 /* Preview Assets.xcassets in Resources */,
 				BF00AE1A2B65C00A008983E6 /* Assets.xcassets in Resources */,
 			);
@@ -140,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF00AE242B65C2EE008983E6 /* ChoreTask.swift in Sources */,
+				BF00AE302B65EC55008983E6 /* ChoreViewModel.swift in Sources */,
+				BF00AE242B65C2EE008983E6 /* ChoreTaskView.swift in Sources */,
+				BF00AE2E2B65D363008983E6 /* ChoreTaskList.swift in Sources */,
 				BF00AE182B65C008008983E6 /* ContentView.swift in Sources */,
+				BF00AE2A2B65D0DF008983E6 /* ChoreTaskModel.swift in Sources */,
 				BF00AE162B65C008008983E6 /* ChoresRaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Vous êtes en 2ème position\navec 56 points")
+            Text("")
             Divider()
-            
+            ChoreTaskList()
         }
         .padding()
     }

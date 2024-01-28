@@ -10,5 +10,5 @@ import Foundation
 struct ChoreTaskModel: Hashable, Codable, Identifiable {
     var id: UUID
     var label: String
-    var points: [Int]
+    var points: Int
 }

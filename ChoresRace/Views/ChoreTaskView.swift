@@ -15,12 +15,10 @@ struct ChoreTask: View {
             HStack {
                 Text(chore.label)
                 Spacer()
-                ForEach(chore.points, id: \.self) { point in
-                    Text("\(point)")
-                }
+                Text("\(chore.points)")
             }
             .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
-        .border(.black, width: 4)
+            .border(.black, width: 4)
         }
         .padding(20)
     }

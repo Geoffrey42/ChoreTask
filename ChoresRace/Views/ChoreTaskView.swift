@@ -24,6 +24,7 @@ struct ChoreTask: View {
     }
 }
 
-#Preview {
-    ChoreTask(chore: chores[0])
-}
+//#Preview {
+//    var chores: [ChoreTaskModel] = load("my_chores.json")
+//    ChoreTask(chore: chores[0])
+//}

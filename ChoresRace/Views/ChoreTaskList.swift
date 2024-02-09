@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ChoreTaskList: View {
+    @ObservedObject var viewModel = ChoreViewModel()
+    
     var body: some View {
-        List(chores) { chore in
+        List(viewModel.chores) { chore in
             ChoreTask(chore: chore)
+        }
+        .onAppear {
+            viewModel.fetchChores()
         }
     }
 }

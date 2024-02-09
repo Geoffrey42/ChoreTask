@@ -7,7 +7,36 @@
 
 import Foundation
 
-var chores: [ChoreTaskModel] = load("my_chores.json")
+struct Payload: Decodable {
+    var data: [ChoreTaskModel]
+}
+
+class ChoreViewModel: ObservableObject {
+    @Published var chores: [ChoreTaskModel] = []
+
+    func fetchChores() {
+        guard let url = URL(string: "http://localhost:4001/api/my-completed-chores/672653ee-ef3d-425b-a0a7-47679e145118") else {
+            print("Invalid URL")
+            return
+        }
+
+        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let data = data, error == nil else {
+                print("HTTP Request Failed \(error?.localizedDescription ?? "")")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                do {
+                    let payload = try JSONDecoder().decode(Payload.self, from: data)
+                    self?.chores = payload.data
+                } catch {
+                    print("Decoding failed with error: \(error)")
+                }
+            }
+        }.resume()
+    }
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
